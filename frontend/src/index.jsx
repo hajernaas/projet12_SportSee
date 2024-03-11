@@ -8,10 +8,15 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<Route exact path="/" element={<Home />} />
-		<Route exact path="/user/:userId" element={<Profil />} />
-		<Route exact path="/settings" element={<Settings />} />
-		<Route exact path="/community" element={<Community />} />
-		<Route path="*" element={<Error />} />
+		<Router>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/user/:userId" element={<Home />} />
+				<Route path="/user/:userId/activity" element={<Home />} />
+				<Route path="/user/:userId/average-sessions" element={<Home />} />
+				<Route path="/user/:userId/performance" element={<Home />} />
+				<Route path="*" element={<Error />} />
+			</Routes>
+		</Router>
 	</React.StrictMode>
 );
