@@ -3,6 +3,9 @@ export class UserData {
 		this.id = data.id;
 		this.keyData = data.keyData;
 		this.score = data.score || data.todayScore;
+		/*this.firstName = data.userInfos.firstName;
+		this.lastName = data.userInfos.lastName;
+		this.age = data.userInfos.age;*/
 		this.userInfos = data.userInfos;
 	}
 
@@ -14,12 +17,16 @@ export class UserData {
 			keyData: KeyDataUser,
 			score: this.score * 100,
 			userInfos: this.userInfos,
+			/*firstName: this.userInfos.firstName,
+			lastName: this.userInfos.lastName,
+			age: this.userInfos.age,*/
 		};
 	}
 }
 
 export class ActivityData {
 	constructor(data) {
+		this.userId = data.userId;
 		this.sessions = data.sessions;
 	}
 
@@ -37,6 +44,7 @@ export class ActivityData {
 
 export class PerformanceData {
 	constructor(data) {
+		this.userId = data.userId;
 		this.performance = data.data;
 	}
 	// RADARCHART
