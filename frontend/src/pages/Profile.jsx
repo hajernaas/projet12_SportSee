@@ -49,7 +49,10 @@ function Profile() {
 					bjr <span>{fetchedData?.score}</span>
 				</h3>
 				<h3>
-					dflkfdj<span>{fetchedData?.userInfos?.firstName}</span>
+					salut M. <span>{fetchedData?.userInfos?.firstName}</span>
+				</h3>
+				<h3>
+					data ket <span>{fetchedData?.keyData?.calorieCount}</span>
 				</h3>
 
 				<h2>Félicitation ! Vous avez explosé vos objectifs hier ?? </h2>
