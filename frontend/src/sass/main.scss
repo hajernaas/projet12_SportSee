@@ -5,5 +5,9 @@
 // _base.scss
 @import "./base/typography";
 
+//_components.scss
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/sidebarIcon";
 //_pages.scss
 @import "./pages/home";
